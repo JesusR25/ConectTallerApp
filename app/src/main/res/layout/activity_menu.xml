@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClasesActivity.activity_menu"
+    android:background="@drawable/fondo4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="141dp"
+                    android:layout_height="203dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tokengrande" />
+
+                <LinearLayout
+                    android:layout_width="414dp"
+                    android:layout_height="186dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                    <EditText
+                        android:id="@+id/editToken"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/text_view_blanco"
+                        android:drawableStart="@drawable/finallupa"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:hint="Introduce tu token"
+                        android:inputType="textPersonName"
+                        android:paddingStart="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/btnBuscar"
+                        android:layout_width="200dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/redondo_estilo"
+
+                        android:minHeight="48dp"
+                        android:text="Buscar"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDatos"
+                android:layout_width="match_parent"
+                android:layout_height="257dp"
+                android:background="@drawable/login_blanco"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtEstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="Estatus"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtVehiculo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Vehiculo"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@+id/txtEstatus"
+                        app:layout_constraintStart_toStartOf="@+id/txtEstatus"
+                        app:layout_constraintTop_toBottomOf="@+id/txtEstatus" />
+
+                    <TextView
+                        android:id="@+id/txtObser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Observacion"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@+id/txtVehiculo"
+                        app:layout_constraintStart_toStartOf="@+id/txtVehiculo"
+                        app:layout_constraintTop_toBottomOf="@+id/txtVehiculo" />
+
+                    <TextView
+                        android:id="@+id/txtMecanico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Mecanico"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@+id/txtObser"
+                        app:layout_constraintStart_toStartOf="@+id/txtObser"
+                        app:layout_constraintTop_toBottomOf="@+id/txtObser" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
